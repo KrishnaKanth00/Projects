@@ -1,17 +1,19 @@
 import cv2
 import numpy as np
+cap = cv2.VideoCapture(0)
 
-img = cv2.imread('WIN_20251127_11_02_34_Pro.jpg')
-img = cv2.resize(img,(0,0),fx=.5,fy=.5)
-gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+while True:
+    ret, frame = cap.read()
+    gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 
-corners = cv2.goodFeaturesToTrack(gray,100,.2,25)
-corners = np.int_(corners)
+    corners = cv2.goodFeaturesToTrack(gray,100,.5,25)
+    corners = np.int_(corners)
 
-for corner in corners:
-    x,y = corner.ravel()
-    cv2.circle(img,(x,y),10,(0,0,255),1)
-cv2.imshow('gray',img)
+    for corner in corners:
+        x,y = corner.ravel()
+        cv2.circle(frame,(x,y),10,(0,0,255),1)
+    cv2.imshow('gray',frame)
 
-cv2.waitKey(0)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
 cv2.destroyAllWindows()
