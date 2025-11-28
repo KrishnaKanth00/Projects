@@ -1,25 +1,28 @@
 import cv2
-import numpy as np
 
-img = cv2.imread('WIN_20251127_11_02_34_Pro.jpg')
-img = cv2.resize(img,(0,0),fx=.5,fy=.5)
-gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+template =cv2.imread('Screenshot 2025-11-28 113519.png',0)
+h,w = template.shape
 
-corners = cv2.goodFeaturesToTrack(gray,100,.2,10)
-corners = np.int_(corners)
+methods = [cv2.TM_SQDIFF,cv2.TM_SQDIFF_NORMED,cv2.TM_CCOEFF,cv2.TM_CCOEFF_NORMED,cv2.TM_CCORR,cv2.TM_CCORR_NORMED]
 
-for corner in corners:
-    x,y = corner.ravel()
-    cv2.circle(img,(x,y),10,(0,0,255),1)
+for method in methods:
+    img = cv2.resize(cv2.imread('WIN_20251127_11_02_34_Pro.jpg'), (0, 0), fx=0.5, fy=0.5)
+    img2 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    result = cv2.matchTemplate(img2,template,method)
+    min_val,max_val,min_loc,max_loc = cv2.minMaxLoc(result)
+
+    if method in [cv2.TM_SQDIFF_NORMED,cv2.TM_SQDIFF]:
+        start = min_loc
+    else:
+        start = max_loc
+
+    end = (start[0] + w,start[1] + h)
+    img2 = cv2.rectangle(img,start,end,(0,0,255),4)
+
+    cv2.imshow('result',img2)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 
-for i in range(len(corners)):
-    for j in range(i+1,len(corners)):
-        start = tuple(corners[i][0])
-        end = tuple(corners[j][0])
-        color = tuple(map(int,np.random.randint(0,255,size=3)))
-        cv2.line(img,start,end,color,2)
-cv2.imshow('gray',img)
 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+
