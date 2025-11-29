@@ -1,27 +1,22 @@
 import cv2
 
-template =cv2.imread('Screenshot 2025-11-28 113519.png',0)
-h,w = template.shape
+cap = cv2.VideoCapture(0)
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-methods = [cv2.TM_SQDIFF,cv2.TM_SQDIFF_NORMED,cv2.TM_CCOEFF,cv2.TM_CCOEFF_NORMED,cv2.TM_CCORR,cv2.TM_CCORR_NORMED]
+while True:
+    ret,frame = cap.read()
 
-for method in methods:
-    img = cv2.resize(cv2.imread('WIN_20251127_11_02_34_Pro.jpg'), (0, 0), fx=0.5, fy=0.5)
-    img2 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-    result = cv2.matchTemplate(img2,template,method)
-    min_val,max_val,min_loc,max_loc = cv2.minMaxLoc(result)
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray,1.1,5)
+    for x,y,w,h in faces:
+        cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),3)
 
-    if method in [cv2.TM_SQDIFF_NORMED,cv2.TM_SQDIFF]:
-        start = min_loc
-    else:
-        start = max_loc
+    cv2.imshow('frame',frame)
+    if cv2.waitKey(1) == ord('q'):
+        break
 
-    end = (start[0] + w,start[1] + h)
-    img2 = cv2.rectangle(img,start,end,(0,0,255),4)
-
-    cv2.imshow('result',img2)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+cv2.destroyAllWindows()
+cap.release()
 
 
 
