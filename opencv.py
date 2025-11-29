@@ -1,20 +1,23 @@
 import cv2
 
 cap = cv2.VideoCapture(0)
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
-
+model = "face_detection_yunet_2023mar.onnx"
+detector = cv2.FaceDetectorYN_create(model,"",(640,480))
 while True:
     ret,frame = cap.read()
+    detector.setInputSize((frame.shape[1], frame.shape[0]))
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray,1.1,5)
-    for x,y,w,h in faces:
-        roi_gray = gray[y:y+h,x:x+w]
-        roi_color = frame[y:y+h,x:x+w]
-        eyes = eye_cascade.detectMultiScale(roi_gray,1.1,5)
-        for ex,ey,ew,eh in eyes:
-            cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),3)
+    faces = detector.detect(frame)
+
+    if faces[1] is not None:
+        for face in faces[1]:
+            x,y,w,h = face[:4].astype(int)
+            lx,ly,rx,ry = face[4:8].astype(int)
+
+            cv2.circle(frame,(lx,ly),15,(0,255,0),2)
+            cv2.circle(frame, (rx, ry), 15, (0, 255, 0), 2)
+            cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
+
 
 
     cv2.imshow('frame',frame)
