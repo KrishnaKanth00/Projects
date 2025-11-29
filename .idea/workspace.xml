@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05100203-5ebf-4c1c-a82b-72119fa18542" name="Changes" comment="Template Matching">
-      <change afterPath="$PROJECT_DIR$/Screenshot 2025-11-28 120259.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="05100203-5ebf-4c1c-a82b-72119fa18542" name="Changes" comment="face detection">
       <change beforePath="$PROJECT_DIR$/opencv.py" beforeDir="false" afterPath="$PROJECT_DIR$/opencv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +86,7 @@
       <workItem from="1764217205493" duration="8597000" />
       <workItem from="1764306111753" duration="4325000" />
       <workItem from="1764346791805" duration="8000" />
-      <workItem from="1764408503465" duration="1061000" />
+      <workItem from="1764408503465" duration="1614000" />
     </task>
     <task id="LOCAL-00001" summary="Color Detection tutorial model">
       <option name="closed" value="true" />
@@ -130,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764310653307</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="face detection">
+      <option name="closed" value="true" />
+      <created>1764409826001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764409826001</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,9 +159,10 @@
     <MESSAGE value="Corner Detection tutorial model for video" />
     <MESSAGE value="Corner Detection tutorial model with line connecting them" />
     <MESSAGE value="Template Matching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Template Matching" />
+    <MESSAGE value="face detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="face detection" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projects$opencv.coverage" NAME="opencv Coverage Results" MODIFIED="1764409437479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projects$opencv.coverage" NAME="opencv Coverage Results" MODIFIED="1764410128851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
