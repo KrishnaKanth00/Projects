@@ -19,7 +19,11 @@ while True:
     if results.multi_hand_landmarks is not None:
         for handsLms in results.multi_hand_landmarks:
             mpDraw.draw_landmarks(frame,handsLms,mphands.HAND_CONNECTIONS)
+            for id , lm in enumerate(handsLms.landmark):
+                h,w,c = frame.shape
+                px,py = int(lm.x*w),int(lm.y*h)
 
+                print(id,px,py)
 
     curr_time = time.time()
     fps = 1/ (curr_time-prev_time)
