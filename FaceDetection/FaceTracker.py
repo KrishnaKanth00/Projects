@@ -40,13 +40,13 @@ class FaceDetector:
         #topleft
         cv2.line(img,(x,y),(x,y+l),(255,0,0),lt)
         cv2.line(img,(x,y),(x+l,y),(255,0,0),lt)
-        # topright
+        # top right
         cv2.line(img, (x1, y), (x1, y + l), (255, 0, 0), lt)
         cv2.line(img, (x1, y), (x1 - l, y), (255, 0, 0), lt)
-        # bottomleft
+        # bottom  left
         cv2.line(img, (x, y1), (x, y1 - l), (255, 0, 0), lt)
         cv2.line(img, (x, y1), (x + l, y1), (255, 0, 0), lt)
-        # bottomright
+        # bottom right
         cv2.line(img, (x1, y1), (x1, y1 - l), (255, 0, 0), lt)
         cv2.line(img, (x1, y1), (x1 - l, y1), (255, 0, 0), lt)
 
