@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05100203-5ebf-4c1c-a82b-72119fa18542" name="Changes" comment="FaceTracking using mediapipe">
-      <change afterPath="$PROJECT_DIR$/FaceMeshDetector/FaceMesher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HandTracker/HandVolumeContol.py" afterDir="false" />
+    <list default="true" id="05100203-5ebf-4c1c-a82b-72119fa18542" name="Changes" comment="Volume Controller Project Using OpenCV">
+      <change afterPath="$PROJECT_DIR$/HandTracker/FingerCounter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Fingerimages/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Fingerimages/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Fingerimages/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Fingerimages/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Fingerimages/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Fingerimages/6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FaceDetection/FaceTracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/FaceDetection/FaceTracker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.FaceMesher.executor": "Run",
     "Python.FaceTracker.executor": "Run",
+    "Python.FingerCounter.executor": "Run",
     "Python.HandTrackingModule.executor": "Run",
     "Python.HandVolumeContol.executor": "Run",
     "Python.PoseEstimation.executor": "Run",
@@ -61,7 +66,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Projects",
+    "last_opened_file_path": "D:/Projects/HandTracker/Fingerimages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,6 +77,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\HandTracker\Fingerimages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\HandTracker" />
       <recent name="D:\Projects" />
@@ -136,7 +144,8 @@
       <workItem from="1764568874486" duration="9158000" />
       <workItem from="1764653624084" duration="4774000" />
       <workItem from="1764740209433" duration="2169000" />
-      <workItem from="1764745071522" duration="4408000" />
+      <workItem from="1764745071522" duration="4749000" />
+      <workItem from="1764833435836" duration="6012000" />
     </task>
     <task id="LOCAL-00001" summary="Color Detection tutorial model">
       <option name="closed" value="true" />
@@ -242,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764579608876</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Volume Controller Project Using OpenCV">
+      <option name="closed" value="true" />
+      <created>1764753553222</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1764753553222</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,14 +290,16 @@
     <MESSAGE value="Hand Tracking using Mediapipe" />
     <MESSAGE value="Pose Tracking using Mediapipe" />
     <MESSAGE value="FaceTracking using mediapipe" />
-    <option name="LAST_COMMIT_MESSAGE" value="FaceTracking using mediapipe" />
+    <MESSAGE value="Volume Controller Project Using OpenCV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Volume Controller Project Using OpenCV" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Projects$FingerCounter.coverage" NAME="FingerCounter Coverage Results" MODIFIED="1764841216832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HandTracker" />
     <SUITE FILE_PATH="coverage/Projects$opencv.coverage" NAME="opencv Coverage Results" MODIFIED="1764485378919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Projects$PoseEstimation.coverage" NAME="PoseEstimation Coverage Results" MODIFIED="1764571612874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PoseEstimation" />
     <SUITE FILE_PATH="coverage/Projects$HandTrackingModule.coverage" NAME="HandTrackingModule Coverage Results" MODIFIED="1764490965738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Projects$FaceMesher.coverage" NAME="FaceMesher Coverage Results" MODIFIED="1764658938678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FaceMeshDetector" />
-    <SUITE FILE_PATH="coverage/Projects$HandVolumeContol.coverage" NAME="HandVolumeContol Coverage Results" MODIFIED="1764752888004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HandTracker" />
-    <SUITE FILE_PATH="coverage/Projects$FaceTracker.coverage" NAME="FaceTracker Coverage Results" MODIFIED="1764745219873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FaceDetection" />
+    <SUITE FILE_PATH="coverage/Projects$HandVolumeContol.coverage" NAME="HandVolumeContol Coverage Results" MODIFIED="1764840817429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HandTracker" />
+    <SUITE FILE_PATH="coverage/Projects$FaceTracker.coverage" NAME="FaceTracker Coverage Results" MODIFIED="1764835459446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FaceDetection" />
   </component>
 </project>
