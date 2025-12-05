@@ -11,7 +11,7 @@ for overimg in mylist:
     img = cv2.resize(img, (200, 200))
     overlaylist.append(img)
 
-wCam,hCam = 640,480
+wCam,hCam = 1280,720
 
 cap = cv2.VideoCapture(0)
 cap.set(3,wCam)
