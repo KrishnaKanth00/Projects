@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05100203-5ebf-4c1c-a82b-72119fa18542" name="Changes" comment="Finger Counter">
-      <change afterPath="$PROJECT_DIR$/PoseEstimation/AITrainer.py" afterDir="false" />
+    <list default="true" id="05100203-5ebf-4c1c-a82b-72119fa18542" name="Changes" comment="Basic AI Trainer">
+      <change afterPath="$PROJECT_DIR$/HandTracker/Header/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Header/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Header/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/Header/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandTracker/VirtualPainter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HandTracker/FingerCounter.py" beforeDir="false" afterPath="$PROJECT_DIR$/HandTracker/FingerCounter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PoseEstimation/PoseEstimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/PoseEstimation/PoseEstimation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,36 +51,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.AITrainer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.FaceMesher.executor&quot;: &quot;Run&quot;,
-    &quot;Python.FaceTracker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.FingerCounter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HandTrackingModule.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HandVolumeContol.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PoseEstimation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.opencv.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/HandTracker/Fingerimages&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.AITrainer.executor": "Run",
+    "Python.FaceMesher.executor": "Run",
+    "Python.FaceTracker.executor": "Run",
+    "Python.FingerCounter.executor": "Run",
+    "Python.HandTrackingModule.executor": "Run",
+    "Python.HandVolumeContol.executor": "Run",
+    "Python.PoseEstimation.executor": "Run",
+    "Python.VirtualPainter.executor": "Run",
+    "Python.opencv.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Projects/HandTracker/Fingerimages",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\HandTracker\Fingerimages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\HandTracker\Header" />
       <recent name="D:\Projects\HandTracker" />
       <recent name="D:\Projects" />
     </key>
@@ -145,7 +150,8 @@
       <workItem from="1764833435836" duration="6183000" />
       <workItem from="1764867740667" duration="614000" />
       <workItem from="1764922663561" duration="2025000" />
-      <workItem from="1764934814234" duration="3065000" />
+      <workItem from="1764934814234" duration="3303000" />
+      <workItem from="1765381131779" duration="7121000" />
     </task>
     <task id="LOCAL-00001" summary="Color Detection tutorial model">
       <option name="closed" value="true" />
@@ -267,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764841366868</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Basic AI Trainer">
+      <option name="closed" value="true" />
+      <created>1764938119932</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1764938119932</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,16 +314,18 @@
     <MESSAGE value="FaceTracking using mediapipe" />
     <MESSAGE value="Volume Controller Project Using OpenCV" />
     <MESSAGE value="Finger Counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finger Counter" />
+    <MESSAGE value="Basic AI Trainer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic AI Trainer" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projects$FingerCounter.coverage" NAME="FingerCounter Coverage Results" MODIFIED="1764841297610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HandTracker" />
+    <SUITE FILE_PATH="coverage/Projects$FingerCounter.coverage" NAME="FingerCounter Coverage Results" MODIFIED="1765382672561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HandTracker" />
     <SUITE FILE_PATH="coverage/Projects$opencv.coverage" NAME="opencv Coverage Results" MODIFIED="1764485378919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Projects$PoseEstimation.coverage" NAME="PoseEstimation Coverage Results" MODIFIED="1764935216007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PoseEstimation" />
     <SUITE FILE_PATH="coverage/Projects$HandTrackingModule.coverage" NAME="HandTrackingModule Coverage Results" MODIFIED="1764490965738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projects$VirtualPainter.coverage" NAME="VirtualPainter Coverage Results" MODIFIED="1765389045749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HandTracker" />
     <SUITE FILE_PATH="coverage/Projects$FaceMesher.coverage" NAME="FaceMesher Coverage Results" MODIFIED="1764658938678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FaceMeshDetector" />
     <SUITE FILE_PATH="coverage/Projects$HandVolumeContol.coverage" NAME="HandVolumeContol Coverage Results" MODIFIED="1764840817429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HandTracker" />
-    <SUITE FILE_PATH="coverage/Projects$FaceTracker.coverage" NAME="FaceTracker Coverage Results" MODIFIED="1764934922916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FaceDetection" />
-    <SUITE FILE_PATH="coverage/Projects$AITrainer.coverage" NAME="AITrainer Coverage Results" MODIFIED="1764937891428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PoseEstimation" />
+    <SUITE FILE_PATH="coverage/Projects$FaceTracker.coverage" NAME="FaceTracker Coverage Results" MODIFIED="1765381406474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FaceDetection" />
+    <SUITE FILE_PATH="coverage/Projects$AITrainer.coverage" NAME="AITrainer Coverage Results" MODIFIED="1764938069150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PoseEstimation" />
   </component>
 </project>
